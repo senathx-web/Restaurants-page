@@ -1,0 +1,71 @@
+.landing-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.overlay {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+
+
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+@font-face {
+  font-family: 'Amanojaku';
+  src: url('../fonts/Amanojaku.otf');
+}
+
+.shop-name-tagline {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+  font-family: 'Amanojaku';
+  color: rgb(255, 166, 0);
+  text-align: center;
+
+
+}
+
+.shop-name-tagline h1 {
+  font-size: clamp(20px, 8vw, 120px);
+  margin-block-end: 0;
+
+
+}
+
+.shop-name-tagline p {
+  margin-block-start: 0;
+  font-size: clamp(14px, 2vw, 24px);
+}
+
+/* 
+.reserve-button {
+  margin-top: 80px;
+  border: none;
+  color: rgb(255, 166, 0);
+  background: transparent;
+  padding: 10px 20px;
+  font-size: clamp(14px, 4vw, 30px);
+  font-weight: bold;
+  font-family: 'amanojaku';
+  cursor: pointer;
+
+
+} */

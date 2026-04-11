@@ -4,13 +4,14 @@ header {
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   gap: 15px;
+  z-index: 200;
 }
 
 header span {
   color: rgb(199, 199, 199);
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
